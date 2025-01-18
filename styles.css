@@ -62,3 +62,124 @@ hr{
 body{
     background-color: #24158a;
 }
+
+.footer {
+    background-color: #7146f1; 
+    border-radius: 10px; 
+    padding: 10px; 
+    max-width: 99%; 
+    margin: 20px auto; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.footer-content {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.footer .links {
+    display: flex; 
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.footer .links a {
+    display: inline-block; 
+}
+
+.footer .links a img {
+    width: 30px;
+    height: 30px;
+    margin: 0.05rem;
+    transition: transform 0.3s ease;
+}
+
+.footer .links a:hover i {
+    transform: scale(1.1) 
+}
+
+@media (max-width: 480px) {
+    .footer .links a {
+        display: inline-block; 
+    }
+
+    .footer .links a img {
+        width: 25px; 
+    }
+}
+
+.contacto{
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contacto h2{
+    margin-bottom: 10px;
+    font-size: 2rem;
+    color: #333;
+}
+
+.contacto p{
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.contacto-form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contacto-form label{
+    font-size: 1rem;
+    color: #333;
+    text-align: left;
+}
+
+.contacto-form input,
+.contacto-form textarea{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contacto-form input:focus,
+.contacto-form textarea:focus{
+    outline: none;
+    border-color: #007BFF;
+}
+
+.contacto-form button {
+    padding: 10px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contacto-form button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 480px) {
+    .contacto{
+        padding: 15px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 0.9rem;
+    }
+}
